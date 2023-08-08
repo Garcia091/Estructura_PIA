@@ -31,22 +31,28 @@
                 </form>
             </div>
 
-            <div id="Cards" class="container">
-                <div class="tarjeta">
-                    <div class="titulo">Nombre de la Fruta</div>
-                    <div class="cuerpo">
-                        <img src="./img/frutas.jfif" alt="muestra">
-                        id
-                    </div>
-                    <div class="pie">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-md btn-outline-dark" id="Editar">Editar</button>
-                                <button type="button" class="btn btn-sm btn-outline-danger" id="Elimiar">Eliminar</button>
+            <div class="container" id="items"></div>
+
+            <div id="" class="">
+                <template id="template-card">
+                    <div class="tarjeta">
+                        <div class="titulo">Nombre de la Fruta</div>
+                        <div class="cuerpo">
+                            <img src="./img/frutas.jfif" alt="muestra">
+                            <span>id</span>
+                        </div>
+                        <div class="pie">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-md btn-outline-dark editar " id="Editar" data-id=""
+                                        data-name="" data-image="">Editar</button>
+                                    <button type="button" class="btn btn-sm btn-outline-danger eliminar" id="Eliminar" data-id=""
+                                        data-name="">Eliminar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </template>
             </div>
         </div>
     </main>
